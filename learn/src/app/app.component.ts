@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'learn';
+  title = 'Welcome to angular';
+  name = 'My Name is Anant';
+
+  getName(){
+    return this.name;
+  }
+
+  obj={
+    name : 'Passing Array name',
+    roll : 234
+  }
+
+  arr = ['anx','xyz','me']
+
+  siteUrl = window.location.href
 }
