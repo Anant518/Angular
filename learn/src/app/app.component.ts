@@ -21,4 +21,9 @@ export class AppComponent {
   arr = ['anx','xyz','me']
 
   siteUrl = window.location.href
+
+  disabledBox = true;
+  enabledBox (){
+    this.disabledBox = false;
+  }
 }
