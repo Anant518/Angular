@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstCompComponent } from './first-comp/first-comp.component';
 import { UserinfoComponent } from './user/userinfo/userinfo.component';
+import { CustomDirective } from './custom.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstCompComponent,
-    UserinfoComponent
+    UserinfoComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
