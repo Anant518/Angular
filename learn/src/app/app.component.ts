@@ -12,4 +12,7 @@ export class AppComponent {
     alert('Heyy');
   }
 
+  setName(data){
+    console.warn(data);
+  }
 }

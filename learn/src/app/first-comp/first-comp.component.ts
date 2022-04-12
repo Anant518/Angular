@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-first-comp',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstCompComponent implements OnInit {
 
+  @Output() setname:EventEmitter<any>=new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
+    this.setname.emit('from child')
   }
 
 }
