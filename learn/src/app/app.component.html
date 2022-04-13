@@ -1,4 +1,13 @@
-<app-first-comp></app-first-comp>
-<button (click)="getName()">Pls click me</button>
-<app-userinfo></app-userinfo>
-
+<h1>hiii</h1>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>UserId</td>
+    </tr>
+    <tr *ngFor="let entry of data">
+        <td>{{entry.id}}</td>
+        <td>{{entry.title}}</td>
+        <td>{{entry.userId}}</td>
+    </tr>
+</table>
