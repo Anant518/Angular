@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserdataService } from './userdata.service'
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
-  name = "Anant"
-  getName(){
-    alert('Heyy');
+  data;
+  constructor(private us: UserdataService) {
+    console.warn(us.getdata())
+    this.us.getfromhttp().subscribe(data => {
+      console.warn(data)
+      this.data=data
+    })
+
   }
 
 }
