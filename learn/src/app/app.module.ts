@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UserRoutingModule } from './user/user-routing.module'
 import { FirstCompComponent } from './first-comp/first-comp.component';
 import { UserinfoComponent } from './user/userinfo/userinfo.component';
 
@@ -14,7 +15,8 @@ import { UserinfoComponent } from './user/userinfo/userinfo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
