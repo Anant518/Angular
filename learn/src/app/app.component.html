@@ -6,3 +6,12 @@
     <br><br>
     <button>Submit</button>
 </form>
+<br><br><br><br>
+<h1>Reactive Form</h1>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" placeholder="email" formControlName="user">
+    <br><br>
+    <input type="password" placeholder="Password" formControlName="password">
+    <br><br>
+    <button>Submit</button>
+</form>
