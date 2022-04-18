@@ -1,7 +1,8 @@
-<h1> Hii Just started to learn Angular </h1>
-{{title}}
-<h2>{{name}}</h2>
-<h3>{{getName()}}</h3>
-<h4>{{obj.name}}</h4>
-<h5>{{arr[0]}}</h5>
-<h3>{{siteUrl}}</h3>
+<h1>Template Driven Form</h1>
+<form #userform="ngForm" (ngSubmit)="onsubmit(userform.value)">
+    <input ngModel type="text" name="email">
+    <br><br>
+    <input ngModel type="password" name="password">
+    <br><br>
+    <button>Submit</button>
+</form>

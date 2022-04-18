@@ -21,4 +21,7 @@ export class AppComponent {
   arr = ['anx','xyz','me']
 
   siteUrl = window.location.href
+  onsubmit(data){
+    console.warn(data)
+  }
 }
