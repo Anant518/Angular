@@ -11,5 +11,10 @@ export class AppComponent {
   getName(){
     alert('Heyy');
   }
+  arr = ['anx','xyz','me']
 
+  siteUrl = window.location.href
+  onsubmit(data){
+    console.warn(data)
+  }
 }
