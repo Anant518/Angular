@@ -19,4 +19,9 @@ export class AppComponent {
   loginUser() {
     console.warn(this.loginForm.value)
   }
+ 
+  name = "Anant"
+  getName(){
+    alert('Heyy');
+  }
 }
